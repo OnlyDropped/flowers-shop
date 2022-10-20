@@ -131,3 +131,20 @@ $('.reviews-slider').slick({
 
   window.addEventListener('scroll', trackScroll);
   goTopBtn.addEventListener('click', backToTop);
+
+
+ $('.cart-slider__big').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false, 
+  fade: true,
+  asNavFor: '.cart-slider__nav'
+});
+$('.cart-slider__nav').slick({
+  slidesToShow: 6,
+  slidesToScroll: 1,
+  asNavFor: '.cart-slider__big',
+  dots: false,
+  //centerMode: true,
+  focusOnSelect: true
+});
