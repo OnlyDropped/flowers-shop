@@ -734,7 +734,7 @@
   height: 693px;
   display: flex;
   flex-direction: column;
- //border: 1px solid #e12317;
+  //border: 1px solid #e12317;
   //background: #ab8d60;
   &__big {
     width: 640px;
@@ -1085,6 +1085,255 @@
     line-height: 17px;
     color: #03453b;
     margin: 0 auto 0 50px;
+  }
+}
+.basket {
+  padding-bottom: 100px;
+  &__inner {
+    margin-bottom: 15px;
+  }
+  &__item {
+    max-width: 100%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    padding: 10px 9px 10px 10px;
+    @extend %flex;
+    align-items: flex-start;
+  }
+  &__item + .basket__item {
+    margin-top: 5px;
+  }
+  &__item-img {
+    height: 130px;
+    width: 126px;
+    overflow: hidden;
+  }
+  &__item-name {
+    max-width: 241px;
+  }
+  &__item-heading {
+    @extend %Montserrat-600;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+  &__item-size {
+    display: flex;
+    align-items: center;
+    gap: 0 15px;
+    @extend %Montserrat-500;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  &__item-span {
+    @extend %Montserrat-400;
+  }
+  &__item-price,
+  &__item-total {
+    @extend %Montserrat-600;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .jq-number {
+    position: relative;
+    vertical-align: middle;
+    padding: 0 0px 0 0;
+    width: 109px;
+    height: 30px;
+    border: none;
+  }
+  .jq-number__field {
+    width: 100%;
+    border: none;
+    border-radius: 0px;
+    box-shadow: none;
+    height: 100%;
+  }
+  .jq-number__spin {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent;
+
+    box-shadow: none;
+    user-select: none;
+    text-shadow: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #03453b;
+    border-radius: 4px;
+  }
+  .jq-number__spin:after {
+    display: none;
+  }
+  .jq-number__spin.minus {
+    left: 0;
+    top: 0;
+    background: url("../img/icons/minus.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .jq-number__spin.plus {
+    right: 0;
+    top: 0;
+    background: url("../img/icons/plus.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .jq-number__field input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0;
+    border: none;
+    outline: none;
+    position: absolute;
+    height: 100%;
+    text-align: center;
+    @extend %Montserrat-500;
+    font-size: 18px;
+    line-height: 130%;
+    color: #333333;
+  }
+  &__item-close {
+    background: transparent;
+  }
+  &__delete {
+    display: flex;
+    align-items: center;
+    @extend %Montserrat-400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #bababa;
+    gap: 0 15px;
+    margin-bottom: 39px;
+  }
+  &__total {
+    @extend %Montserrat-600;
+    font-size: 24px;
+    line-height: 130%;
+    color: #03453b;
+    margin: 0 0 20px auto;
+    text-align: right;
+  }
+  &__order {
+    @extend %flex;
+  }
+  &__form {
+    @extend %flex;
+    gap: 0 21px;
+    max-width: 330px;
+  }
+  &__input {
+    max-width: 309px;
+    border: 1px solid #bababa;
+    border-radius: 4px;
+    padding: 16px 17px 17px;
+  }
+}
+.log-in {
+  padding: 100px 0;
+  text-align: center;
+  &__inner {
+    max-width: 580px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    margin: 0 auto;
+    padding: 70px;
+    background: url('../img/log-in.png');
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+  &__form {
+    max-width: 440px;
+  }
+  &__label {
+    width: 100%;
+  }
+  &__input {
+    width: 100%;
+    border: 1px solid #bababa;
+    border-radius: 4px;
+    padding: 17px;
+    margin-bottom: 10px;
+  }
+  &__info {
+    @extend %flex;
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 130%;
+  }
+  .btn {
+    display: inline-block;
+    width: 100%;
+    & + .btn {
+      margin-top: 5px;
+    }
+  }
+  .custom-checkbox {
+    // Тут мы просто центрируем чекбокс и текст
+    display: flex;
+    align-items: center;
+  }
+
+  .custom-checkbox .checkbox {
+    margin-right: 15px;
+  }
+
+  .custom-checkbox input {
+    display: none; // Скрываем оригинальный чекбокс
+    position: absolute; // После скрытия оставется пустое пространство,
+    // но абсолютное позиционирование это устранит
+  }
+
+  .checkbox {
+    // Тут стилизуем сам чекбокс
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #03453b;
+    border-radius: 4px;
+  }
+
+  .checkmark {
+    // Тут центритуем и пишем стили для иконки
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: auto;
+    display: none; // Скрываем иконку
+  }
+
+  .custom-checkbox input:checked ~ .checkbox .checkmark {
+    display: block; // Показываем иконку, когда чекбокс активен
+  }
+
+  .custom-checkbox input:checked ~ .checkbox {
+    background: transparent;
+    // Если вы хотите не только отображать икнонку, но и менять
+    // сам чекбокс после активации - напишите сюда код для активного состояния
+  }
+  &__input{
+    color: #2f323a;
+  }
+  &__label--password{
+    position: relative;
+    .log-in__input{
+      padding-right: 40px;
+    }
+    .log-in__eye-off{
+      position: absolute;
+      top: 0;
+      right: 16px;
+      cursor: pointer;
+    }
+  }
+  &__sign-up{
+    background: #fff;
+    border: 1px solid #03453B;
+    color: #03453B;
   }
 }
 .footer-nav {

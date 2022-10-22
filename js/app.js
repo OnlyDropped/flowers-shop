@@ -148,3 +148,7 @@ $('.cart-slider__nav').slick({
   //centerMode: true,
   focusOnSelect: true
 });
+
+
+
+$('.basket__item-number').styler({})

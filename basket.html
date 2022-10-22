@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQueryFormStyler/2.0.2/jquery.formstyler.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQueryFormStyler/2.0.2/jquery.formstyler.theme.min.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
@@ -137,7 +139,113 @@
       </div>
     </header>
     <main class="main">
-
+      <section class="breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="">Корзина</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="basket">
+        <div class="container">
+          <h1 class="title basket__title">Корзина</h1>
+          <div class="basket__inner">
+            <div class="basket__item">
+              <img class="basket__item-img" src="img/card-bg.jpg" alt="">
+              <div class="basket__item-name">
+                <p class="basket__item-heading">Букет «Cчастье» Букет «Cчастье»Букет «Cчаст</p>
+                <div class="basket__item-size">
+                  Размер букета
+                  <span class="basket__item-span">Стандарт</span>
+                </div>
+              </div>
+              <div class="basket__item-price">125 BYN</div>
+              <input class="basket__item-number" type="number" value="1" min="1" step="1">
+              <div class="basket__item-total">1250 BYN</div>
+              <button class="basket__item-close">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.2891 1L1.28906 13M1.28906 1L13.2891 13" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="basket__item">
+              <img class="basket__item-img" src="img/card-bg.jpg" alt="">
+              <div class="basket__item-name">
+                <p class="basket__item-heading">Букет «Cчастье» Букет «Cчастье»Букет «Cчаст</p>
+                <div class="basket__item-size">
+                  Размер букета
+                  <span class="basket__item-span">Стандарт</span>
+                </div>
+              </div>
+              <div class="basket__item-price">125 BYN</div>
+              <input class="basket__item-number" type="number" value="1" min="1" step="1">
+              <div class="basket__item-total">1250 BYN</div>
+              <button class="basket__item-close">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.2891 1L1.28906 13M1.28906 1L13.2891 13" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="basket__item">
+              <img class="basket__item-img" src="img/card-bg.jpg" alt="">
+              <div class="basket__item-name">
+                <p class="basket__item-heading">Букет «Cчастье» Букет «Cчастье»Букет «Cчаст</p>
+                <div class="basket__item-size">
+                  Размер букета
+                  <span class="basket__item-span">Стандарт</span>
+                </div>
+              </div>
+              <div class="basket__item-price">125 BYN</div>
+              <input class="basket__item-number" type="number" value="1" min="1" step="1">
+              <div class="basket__item-total">1250 BYN</div>
+              <button class="basket__item-close">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.2891 1L1.28906 13M1.28906 1L13.2891 13" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="basket__item">
+              <img class="basket__item-img" src="img/card-bg.jpg" alt="">
+              <div class="basket__item-name">
+                <p class="basket__item-heading">Букет «Cчастье» Букет «Cчастье»Букет «Cчаст</p>
+                <div class="basket__item-size">
+                  Размер букета
+                  <span class="basket__item-span">Стандарт</span>
+                </div>
+              </div>
+              <div class="basket__item-price">125 BYN</div>
+              <input class="basket__item-number" type="number" value="1" min="1" step="1">
+              <div class="basket__item-total">1250 BYN</div>
+              <button class="basket__item-close">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.2891 1L1.28906 13M1.28906 1L13.2891 13" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <a class="basket__delete" href="">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.19062 1.1001L1.39062 8.9001M1.39062 1.1001L9.19062 8.9001" stroke="#BABABA" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Удалить все товары
+          </a>
+          <div class="basket__total">К оплате
+            3150 BYN
+          </div>
+          <div class="basket__order">
+            <form class="basket__form" action="">
+              <input class="basket__input" type="text" placeholder="Введите промокод">
+              <a class="btn" href="">Применить</a>
+            </form>
+            <a class="btn" href="">Перейти к оформлению</a>
+          </div>
+        </div>
+      </section>
       <section class="offer buy">
         <div class="container">
           <div class="nav">
@@ -521,6 +629,7 @@
     </a>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQueryFormStyler/2.0.2/jquery.formstyler.min.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>
