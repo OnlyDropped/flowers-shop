@@ -5,6 +5,9 @@
 .header-top {
   padding: 10px 0;
   //background: rgba(crimson, $alpha: 0.1);
+  .header-nav__num{
+    display: none;
+  }
   &__inner {
     @extend %flex;
   }
@@ -1484,3 +1487,5 @@
   }
 }
 @import "media";
+@import "header";
+

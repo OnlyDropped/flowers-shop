@@ -1,0 +1,148 @@
+@media (max-width: 1300px) {
+  .header-nav {
+    &__form {
+      max-width: 355px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .header-nav {
+    &__item:nth-child(2),
+    &__item:nth-child(3) {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .header-top {
+    &__list {
+      gap: 0 10px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .header-top {
+    &__social {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .header-nav {
+    &__form {
+      max-width: 300px;
+    }
+  }
+}
+
+@media (max-width: 855px) {
+  .header-top {
+    &__city {
+      gap: 0 5px;
+      padding: 7px 0;
+      //background: rgba($color: violet, $alpha: 0.3);
+    }
+  }
+}
+
+@media (max-width: 820px){
+  .header-top{
+    &__box{
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header-top {
+    &__list {
+      display: none;
+    }
+    &__box {
+      display: block;
+      padding: 0;
+      margin: 0 13px 0 auto;
+    }
+    &__lang {
+      margin-left: 30px;
+    }
+    &__clients {
+      padding: 10px 30px;
+      background: #b9956f;
+      border-radius: 4px;
+      // @extend %Montserrat-700;
+      font-size: 14px;
+      line-height: 17px;
+      color: #ebebeb;
+    }
+  }
+  .header-nav {
+    &__logo {
+      width: 134px;
+      height: 31px;
+    }
+    &__num {
+      display: none;
+    }
+    &__form {
+      max-width: 358px;
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .header-nav {
+    &__form {
+      max-width: 300px;
+    }
+  }
+}
+
+@media (max-width: 610px) {
+  .header-top {
+    &__clients {
+      padding: 10px 15px;
+    }
+    &__lang {
+      margin-left: 15px;
+    }
+  }
+  .header-nav {
+    &__inner {
+      flex-wrap: wrap;
+      gap: 20px 0;
+    }
+    &__form {
+      max-width: 100%;
+      order: 1;
+    }
+  }
+}
+
+@media (max-width: 530px) {
+  .header-top {
+    &__box {
+      display: none;
+    }
+    &__clients{
+      margin-left: auto;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .header-top {
+    &__clients{
+      display: none;
+    }
+    .header-nav__num{
+      display: flex;
+      align-items: center;
+      color: #333;
+    }
+  }
+}
