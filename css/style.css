@@ -2919,6 +2919,220 @@ button {
   }
 }
 
+@media (max-width: 1440px) {
+  .catalog-content .offer__card {
+    max-width: 305px;
+  }
+  .catalog-content .offer__img {
+    width: 305px;
+  }
+}
+
+@media (max-width: 1320px) {
+  .catalog-content .offer__card {
+    max-width: 420px;
+  }
+  .catalog-content .offer__img {
+    width: 420px;
+  }
+}
+
+@media (max-width: 1220px) {
+  .catalog-content .offer__card {
+    max-width: 390px;
+  }
+  .catalog-content .offer__img {
+    width: 390px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .catalog__inner {
+    gap: 0;
+  }
+  .catalog-content .offer__card {
+    max-width: 300px;
+  }
+  .catalog-content .offer__img {
+    width: 300px;
+  }
+  .catalog-filter {
+    display: none;
+  }
+  .search {
+    padding: 65px 0;
+  }
+  .reviews-catalog .reviews-slider__item {
+    max-width: 470px;
+    width: 100%;
+  }
+  .reviews-catalog .reviews-slider__card {
+    margin: 0 15px;
+  }
+  .work .work__item {
+    background: transparent;
+  }
+}
+
+@media (max-width: 975px) {
+  .catalog-content .offer__card {
+    max-width: 275px;
+  }
+  .catalog-content .offer__img {
+    width: 275px;
+  }
+}
+
+@media (max-width: 965px) {
+  .catalog-content .offer__card {
+    max-width: 260px;
+  }
+  .catalog-content .offer__img {
+    width: 260px;
+  }
+}
+
+@media (max-width: 900px) {
+  .catalog-content .offer__card {
+    max-width: 245px;
+  }
+  .catalog-content .offer__img {
+    width: 245px;
+  }
+}
+
+@media (max-width: 768px) {
+  .catalog-content .offer__card {
+    max-width: 350px;
+  }
+  .catalog-content .offer__img {
+    width: 350px;
+  }
+  .search {
+    padding: 50px 0;
+  }
+  .reviews-slider .slick-arrow {
+    top: -55px;
+  }
+}
+
+@media (max-width: 425px) {
+  .catalog-content .offer__card {
+    max-width: 185px;
+    min-height: 388px;
+  }
+  .catalog-content .offer__img {
+    width: 185px;
+  }
+  .catalog-content .offer__body {
+    min-height: 225px;
+  }
+  .catalog-content .offer__link {
+    padding: 10px 0px;
+  }
+  .catalog-content .offer__heading {
+    font-size: 16px;
+  }
+  .catalog-content .offer__head {
+    height: 142px;
+  }
+  .search__link {
+    padding: 10px 15px;
+  }
+  .reviews-slider .slick-arrow {
+    top: -45px;
+  }
+}
+
+@media (max-width: 414px) {
+  .catalog .container {
+    padding: 0;
+  }
+  .catalog title {
+    padding-left: 15px;
+  }
+  .catalog-content .offer__card {
+    max-width: 195px;
+  }
+  .catalog-content .offer__img {
+    width: 195px;
+  }
+  .catalog-content__sort {
+    font-size: 16px;
+    gap: 0 15px;
+    padding-left: 15px;
+  }
+  .catalog-content__sort-link + .catalog-content__sort-link {
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 390px) {
+  .catalog-content .offer__card {
+    max-width: 182px;
+  }
+  .catalog-content .offer__img {
+    width: 182px;
+  }
+  .catalog-content__sort {
+    font-size: 16px;
+    gap: 0 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .catalog-content__info {
+    gap: 0;
+  }
+  .catalog-content .offer__card {
+    max-width: 185px;
+  }
+  .catalog-content .offer__img {
+    width: 185px;
+  }
+  .catalog-content__view {
+    padding: 10px 25px;
+  }
+  .search .title {
+    font-size: 32px;
+  }
+  .search__link {
+    padding: 10px 8px;
+  }
+}
+
+@media (max-width: 360px) {
+  .catalog-content .offer__card {
+    max-width: 175px;
+  }
+  .catalog-content .offer__img {
+    width: 175px;
+  }
+}
+
+@media (max-width: 320px) {
+  .catalog-content .offer__card {
+    max-width: 158px;
+  }
+  .catalog-content .offer__img {
+    width: 158px;
+  }
+  .catalog-content__sort {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .catalog-content .offer__price,
+  .catalog-content .offer__buy {
+    font-size: 15px;
+  }
+  .catalog-content__link {
+    font-size: 15px;
+  }
+  .search__inner {
+    gap: 10px 7px;
+  }
+}
+
 @media (max-width: 1024px) {
   .footer-nav {
     padding: 35px 0;
