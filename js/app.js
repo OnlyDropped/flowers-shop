@@ -100,6 +100,32 @@ $('.reviews-slider').slick({
   slidesToScroll: 1,
   prevArrow: '<button type="button" class="slick-prev"><img src="img/icons/slick-prev.svg" alt=""></button>',
   nextArrow: '<button type="button" class="slick-next"><img src="img/icons/slick-next.svg" alt=""></button>',
+   responsive: [
+    {
+      breakpoint: 821,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 590,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 415,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    },
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
 })
 
 

@@ -206,6 +206,7 @@
     height: 667px;
     top: 0;
     right: -95px;
+    z-index: -1;
   }
   &__inner {
     display: flex;
@@ -348,6 +349,9 @@
 }
 .about {
   padding-top: 100px;
+  &__images{
+    display: none;
+  }
 
   &__nav {
     margin-bottom: 50px;
@@ -1488,5 +1492,6 @@
 }
 @import "media";
 @import "header";
+@import "home";
 @import 'footer';
 
