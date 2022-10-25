@@ -204,6 +204,7 @@
   .reviews-slider {
     &__item {
       padding: 20px;
+      background-color: dodgerblue;
     }
   }
   .work {
@@ -318,6 +319,11 @@
   }
   .offer-special {
     background-image: none;
+  }
+  .reviews {
+    .container{
+      overflow-x: hidden;
+    }
   }
 }
 

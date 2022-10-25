@@ -2624,6 +2624,7 @@ button {
   }
   .reviews-slider__item {
     padding: 20px;
+    background-color: dodgerblue;
   }
   .work .work__item {
     max-width: 480px;
@@ -2717,6 +2718,9 @@ button {
   }
   .offer-special {
     background-image: none;
+  }
+  .reviews .container {
+    overflow-x: hidden;
   }
 }
 
