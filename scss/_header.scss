@@ -44,7 +44,6 @@
     &__city {
       gap: 0 5px;
       padding: 7px 0;
-      //background: rgba($color: violet, $alpha: 0.3);
     }
   }
 }
@@ -72,7 +71,7 @@
     }
     &__clients {
       padding: 10px 30px;
-      background: #b9956f;
+      // background: #b9956f;
       border-radius: 4px;
       // @extend %Montserrat-700;
       font-size: 14px;

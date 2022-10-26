@@ -1,8 +1,5 @@
 @media (max-width: 1440px) {
   .flowers {
-    // &__item {
-    //   background: rgba($color: crimson, $alpha: 0.4);
-    // }
     &__rigth .flowers__item {
       width: 200px;
     }
@@ -16,7 +13,6 @@
   }
   .offer {
     &__content {
-      // background: dimgray;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
     }
@@ -204,7 +200,6 @@
   .reviews-slider {
     &__item {
       padding: 20px;
-      background-color: dodgerblue;
     }
   }
   .work {
