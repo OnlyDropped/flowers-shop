@@ -217,8 +217,21 @@ button {
   margin-bottom: 30px;
 }
 
-.main-cart{
-  background: url('../img/main-bg.png');
+.main-cart {
+  background: url("../img/main-bg.png");
   background-repeat: no-repeat;
   background-position-y: center;
+}
+
+@media (max-width: 768px) {
+  .back_to_top {
+    bottom: 45px;
+    right: 15px;
+    z-index: 9999;
+    padding: 5px 15px;
+    border-radius: 5px;
+    svg {
+      height: 25px;
+    }
+  }
 }

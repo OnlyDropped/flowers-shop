@@ -1,0 +1,59 @@
+@media (max-width: 768px) {
+  .log-in {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .log-in {
+    .title {
+      font-size: 30px;
+    }
+    &__info {
+      margin-bottom: 20px;
+    }
+    &__inner {
+      padding: 20px 25px;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .log-in {
+    padding: 40px 0;
+    &__info {
+      margin-bottom: 20px;
+    }
+    &__inner {
+      padding: 10px 15px;
+    }
+    &__info {
+      .btn {
+        font-size: 16px;
+        padding: 10px 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .log-in {
+    padding: 30px 0;
+    .title {
+      font-size: 28px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .log-in {
+    &__info {
+      flex-wrap: wrap;
+      gap: 10px 0;
+      justify-content: center;
+    }
+    .custom-checkbox .checkbox {
+      margin-right: 5px;
+    }
+  }
+}
